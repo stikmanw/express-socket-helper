@@ -8,7 +8,6 @@ class Demo extends SocketServer {
   }
 
   bindEvents(socket) {
-    // Expected Event Model will be that of Performance/PageEvent
     socket.on('ping', () => {
       socket.emit('pong'); 
     });
